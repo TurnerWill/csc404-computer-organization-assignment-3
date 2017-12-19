@@ -11,11 +11,11 @@
 #include<math.h>
 #include<omp.h> 
 
-#define N 128 //dimension for rows and columns of square-matrices
+#define N 1024 //dimension for rows and columns of square-matrices
 #define LOOPS 1 // number of accuracy improvement loops
 #define CPU_CLK 2.0e9 // toshiba satellite laptop AMD A6-5200 quad-core
 
-#define THREAD_COUNT 4
+#define THREAD_COUNT 4 // number of threads/cores to be opened for parallelization
 
 // ((2*pow(N,3)) - pow(N,2)); formula used to determine number of matrix arithmetic operations
 
